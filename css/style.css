@@ -1414,6 +1414,26 @@ h3.route {
     text-align: left;
 }
 
+.wrap-404 {
+    text-align: center;
+} 
+
+.wrap-404 h1 {
+    margin-top: 80px;
+}
+
+.wrap-404 img {
+    margin: 70px 0px;
+}
+
+.wrap-404 a {
+    text-decoration: underline;
+}
+
+.wrap-404 p {
+    margin-bottom: 80px;
+}
+
 
 @media only screen and (max-width: 970px) {
     .container {
