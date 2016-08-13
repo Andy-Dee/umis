@@ -27,4 +27,26 @@ $(document).ready(function(){
   });
 });
 
+/* Hovers in menu */
+
+$( function() {
+    $('.dropdown-list').hover(
+    function(){
+        $('.dropdown-list-outer').css('color','#FFF');
+    },
+    function(){
+        $('.dropdown-list-outer').css('color','#7cd25a');
+    });
+});
+
+$( function() {
+    $('.dropdown-bottom-list').hover(
+    function(){
+        $('.dropdown-list-bottom-outer').css('color','#7cd25a');
+    },
+    function(){
+        $('.dropdown-list-bottom-outer').css('color','#454545');
+    });
+});
+
 

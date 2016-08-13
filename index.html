@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Umis</title> 
 
     <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen"/>
@@ -20,10 +21,11 @@
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>    
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script type="text/javascript" src="libs/slick/slick.min.js"></script>
     
     <script type="text/javascript" src="libs/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script type="text/javascript" src="libs/fancybox/jquery.easing-1.4.pack.js"></script>
+    <script type="text/javascript" src="libs/fancybox/jquery.easing-1.3.pack.js"></script>
     <script type="text/javascript" src="libs/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>    
     <script src="js/script.js" type="text/javascript"></script>
     <script src="libs/jquery-validation-engine/js/jquery.validationEngine-ru.js" type="text/javascript" charset="utf-8"></script>
@@ -36,7 +38,7 @@
     <header>
         <div class="container header-top">
             <div class="header-top-item">
-                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
              <div class="header-top-item">
                 <button class="free-call">бесплатный вызов замерщика</button>
@@ -55,7 +57,7 @@
             <div class="container menu-inner">
                 <ul class="menu-top dropdown">
                     <li class="dropdown-top"><a class="dropdown-outer" href="typical.html">о компании</a></li>
-                    <li class="dropdown-top"><a class="dropdown-outer" href="catalog.html">шкафы</a>
+                    <li class="dropdown-top dropdown-list"><a class="dropdown-outer dropdown-list-outer" href="catalog.html">шкафы</a>
                         <ul class="dropdown-inside">
                             <li><a class="dropdown-inner" href="#">шкафы угловые</a></li>
                             <li><a class="dropdown-inner" href="#">шкафы купе</a></li>
@@ -107,29 +109,31 @@
 <!-- Products -->
     <div class="container products">
         <h1>Продукция</h1>
-        <div class="product-inner">
-            <a href="#"><img src="img/cabin-broad.png" alt="cabin-broad"></a>
-            <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Шкафы распашные</span></p></a>
-        </div>
-        <div class="product-inner">
-            <a href="#"><img src="img/cabin-kupe.png" alt="cabin-kupe"></a>
-            <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Шкафы-купе</span></p></a>
-        </div>
-        <div class="product-inner">
-            <a href="#"><img src="img/cabin-corner.png" alt="cabin-corner"></a>
-            <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Угловые шкафы-купе</span></p></a>
-        </div>
-        <div class="product-inner">
-            <a href="#"><img src="img/livingroom.png" alt="livingroom"></a>
-            <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Гостинные</span></p></a>
-        </div>
-        <div class="product-inner">
-            <a href="#"><img src="img/hall.png" alt="hall"></a>
-            <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Прихожие</span></p></a>
-        </div>
-        <div class="product-inner">
-            <a href="#"><img src="img/wardrobe.png" alt="wardrobe"></a>
-            <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Гардеробные комнаты</span></p></a>
+        <div class="products-box">
+           <div class="product-inner">
+                <a href="#"><img src="img/cabin-broad.png" alt="cabin-broad"></a>
+                <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Шкафы распашные</span></p></a>
+            </div>
+            <div class="product-inner">
+                <a href="#"><img src="img/cabin-kupe.png" alt="cabin-kupe"></a>
+                <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Шкафы-купе</span></p></a>
+            </div>
+            <div class="product-inner">
+                <a href="#"><img src="img/cabin-corner.png" alt="cabin-corner"></a>
+                <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Угловые шкафы-купе</span></p></a>
+            </div>
+            <div class="product-inner">
+                <a href="#"><img src="img/livingroom.png" alt="livingroom"></a>
+                <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Гостинные</span></p></a>
+            </div>
+            <div class="product-inner">
+                <a href="#"><img src="img/hall.png" alt="hall"></a>
+                <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Прихожие</span></p></a>
+            </div>
+            <div class="product-inner">
+                <a href="#"><img src="img/wardrobe.png" alt="wardrobe"></a>
+                <a href="#"><p><img src="img/mark-green.png" alt="mark-green">&nbsp;&nbsp;<span>Гардеробные комнаты</span></p></a>
+            </div> 
         </div>
     </div>
 <!-- About -->
@@ -144,30 +148,32 @@
     <div class="container partners">
         <h1>Наши партнеры</h1>
         <p class="partners-txt">Мы работаем с проверенными поставщиками комплектующих<br> и материалов для производства мебели.</p>
-        <a href="#" class="partner">
-            <img src="img/egger.png" alt="egger">
-        </a>
-        <a href="#" class="partner">
-            <img src="img/krono.png" alt="krono">
-        </a>
-        <a href="#" class="partner">
-            <img src="img/kronopol.png" alt="kronopol">
-        </a>
-        <a href="#" class="partner">
-            <img src="img/mam.png" alt="mam">
-        </a>
-        <a href="#" class="partner">
-            <img src="img/hettich.png" alt="hettich">
-        </a>
-        <a href="#" class="partner">
-            <img src="img/boyard.png" alt="boyard">
-        </a>
-        <a href="#" class="partner">
-            <img src="img/aristo.png" alt="aristo">
-        </a>
-        <a href="#" class="partner">
-            <img src="img/blum.png" alt="blum">
-        </a>
+        <div class="partners-inner">
+            <a href="#" class="partner">
+                <img src="img/egger.png" alt="egger">
+            </a>
+            <a href="#" class="partner">
+                <img src="img/krono.png" alt="krono">
+            </a>
+            <a href="#" class="partner">
+                <img src="img/kronopol.png" alt="kronopol">
+            </a>
+            <a href="#" class="partner">
+                <img src="img/mam.png" alt="mam">
+            </a>
+            <a href="#" class="partner">
+                <img src="img/hettich.png" alt="hettich">
+            </a>
+            <a href="#" class="partner">
+                <img src="img/boyard.png" alt="boyard">
+            </a>
+            <a href="#" class="partner">
+                <img src="img/aristo.png" alt="aristo">
+            </a>
+            <a href="#" class="partner">
+                <img src="img/blum.png" alt="blum">
+            </a>
+        </div>        
     </div>
 <!-- Apply -->
     <div class="container-fluid apply-wrap">
@@ -189,7 +195,7 @@
         <div class="container menu-bottom-wrap">
             <ul class="menu-bottom dropdown-footer">
                 <li class="dropdown-bottom"><a class="dropdown-bottom-outer" href="#">о компании</a></li>
-                <li class="dropdown-bottom"><a class="dropdown-bottom-outer" href="#">шкафы</a>
+                <li class="dropdown-bottom dropdown-bottom-list"><a class="dropdown-bottom-outer dropdown-list-bottom-outer" href="#">шкафы</a>
                     <ul class="dropdown-bottom-inside">
                         <li><a class="dropdown-bottom-inner" href="#">шкафы угловые</a></li>
                         <li><a class="dropdown-bottom-inner" href="#">шкафы купе</a></li>
