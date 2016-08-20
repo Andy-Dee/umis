@@ -39,7 +39,7 @@
                 <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             </div>
              <div class="header-top-item">
-                <button class="free-call">бесплатный вызов замерщика</button>
+                <button href="#apply" class="free-call"><a class="free-call-link" href="#apply">бесплатный вызов замерщика</a> </button>
             </div>
             <div class="header-top-item header-contact">
                 <div class="header-contact-item">
@@ -78,7 +78,7 @@
             <h3 class="route">Как связаться</h3> 
             <div class="footer-item-phone contacts-phone">
                 <img src="img/phone.png" alt="phone">
-                <p class="footer-phone">8 (499) 390-49-99</p>
+                <a href="tel:84993904999">8 (499) 390-49-99</a>
             </div>
             <div class="footer-item-address contacts-address">
                 <img src="img/address.png" alt="address">
@@ -100,17 +100,22 @@
        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=qRsWf3lQD-RuSwv5-ZAFzj6euCBR1sal&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script> 
     </div>
 <!-- Apply -->
-    <div class="container-fluid apply-wrap">
+    <div id="apply" class="container-fluid apply-wrap">
         <div class="container apply">
             <h1>Заявка на просчет</h1>
             <form id="formID">
-                <input class="validate[required]" data-prompt-position="topRight" type="text" name="name" placeholder="ваше имя">
-                <input class="validate[required]" data-prompt-position="topRight"  type="text" name="phone" placeholder="телефон">
-                <input class="validate[required]" data-prompt-position="topRight"  type="e-mail" name="e-mail" placeholder="e-mail">
-                <input class="validate[required] file" data-prompt-position="topRight"  type="text" name="file" placeholder="файл не выбран">
-                <button class="choose">выбрать</button>
+                <input class="validate[required], custom[onlyLetterSp]" data-prompt-position="topRight" type="text" name="name" placeholder="ваше имя">
+                <input class="validate[required], custom[phone]" data-prompt-position="topRight"  type="text" name="phone" placeholder="телефон">
+                <input class="validate[required], custom[email]" data-prompt-position="topRight"  type="e-mail" name="e-mail" placeholder="e-mail">
+                
+                <label class="file_upload">
+                    <span class="button choose">выбрать</span>
+                    <mark><span>Файл не выбран</span></mark>
+                    <input style="width:315px; margin-right:5px; position:absolute; top:-999px; visibility:hidden;" class="validate[required]" data-prompt-position="topRight"  type="file" multiple name="file" placeholder="файл не выбран">
+                </label>                
+                
                 <p class="file-not"><img src="img/note-file.png" alt=""> Файл не должен превышать 8 мб</p>
-                <button class="send-apply disabled">отправить заявку</button>
+                <button id="send-apply" class="send-apply disabled">отправить заявку</button>
             </form>
         </div>
     </div>
