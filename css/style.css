@@ -1029,7 +1029,7 @@ p.banner-txt {
 
 .product-inner img {
     border: 1px solid transparent;
-}o
+}
 
 .product-inner img:hover {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
@@ -1498,53 +1498,50 @@ form.form-e-mail, form.form-select {
 /* Project */
 .project {
     min-height: 1030px;
+    padding-bottom: 0px;
 }
 
-ol.projects-list {
+.projects-list {
     position: relative;
     margin-top: 50px;
+    display: flex;
+    display:-webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 970px;
 }
 
-ol.projects-list li {
-    width: 430px;
+.projects-item {
+    width: 460px;
+    margin-bottom: 20px;
 }
 
-ol.projects-list li h6 {
+.projects-item  h6 {
     margin-top: 0;
 }
 
-ol.projects-list li.odds-first {
-    position: absolute;
-    left: 40px;
+.count {
+    color: #7cd25a;
+    font-family: GothamProRegular;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    width: 28px !important;
+    height: 28px !important;
+    background-image: url('../img/ol-item.png');
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    margin-right: 10px;
 }
 
-ol.projects-list li.odds-second {
-    position: absolute;
-    left: 510px;
-    top: 320px;
+.projects-item p {
+    padding-left: 40px;
 }
 
-ol.projects-list li.odds-third {
-    position: absolute;
-    top: 630px;
-    left: 40px;
-}
 
-img.project-one {
-    position: absolute;
-    left: 480px;
-    top: -1px;
-}
-
-img.project-two {
-    position: absolute;
-    top: 320px;
-}
-
-img.project-three {
-    position: absolute;
-    top: 630px;
-    left: 480px;
+.done-projects {
+    padding-top: 10px;
 }
 
 .done-projects-inner {
