@@ -1378,7 +1378,7 @@ a.footer-phone {
     background-position: 50% 50%;
     width: 42px;
     height: 30px;
-    left: -50px;
+    left: -51px;
 }
 
 #fancybox-left-ico:hover {
@@ -1390,7 +1390,8 @@ a.footer-phone {
     background-position: 50% 50%;
     width: 42px;
     height: 30px;
-    left: 230px;
+    left: auto;
+    right: -51px;
 }
 
 #fancybox-right-ico:hover {
